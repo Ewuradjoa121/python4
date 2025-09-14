@@ -2,9 +2,10 @@ import pyttsx3
 
 engine =pyttsx3.init()
 
-password=4545
-Password=int(input("enter password:"))
-if password< password :
+correct_password=4545
+
+user_password=int(input("Enter password:"))
+if  user_password !=correct_password:
     engine.say( " leave this place ")
     engine.runAndWait()
 
